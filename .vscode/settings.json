@@ -1,0 +1,7 @@
+{
+    "mssql.format.alignColumnDefinitionsInColumns": true,
+    "mssql.format.datatypeCasing": "uppercase",
+    "mssql.format.keywordCasing": "uppercase",
+    "mssql.format.placeCommasBeforeNextStatement": true,
+    "mssql.format.placeSelectStatementReferencesOnNewLine": true
+}

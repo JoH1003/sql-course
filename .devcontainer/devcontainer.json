@@ -1,0 +1,50 @@
+{
+  "name": "SQL Student Course",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-mssql.mssql"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "mssql.connections": [
+          {
+            "profileName": "LearnSQL Profile",
+            "server": "zomalex-sql.database.windows.net",
+            "database": "LearnSQL",
+            "authenticationType": "SqlLogin",
+            "user": "student10",
+            "savePassword": true,
+            "encrypt": "Mandatory",
+            "trustServerCertificate": false,
+            "port": 1433
+          },
+          {
+            "profileName": "Chinook Profile",
+            "server": "zomalex-sql.database.windows.net",
+            "database": "Chinook",
+            "authenticationType": "SqlLogin",
+            "user": "student10",
+            "savePassword": true,
+            "encrypt": "Mandatory",
+            "trustServerCertificate": false,
+            "port": 1433
+          },
+          {
+            "profileName": "Northwind Profile",
+            "server": "zomalex-sql.database.windows.net",
+            "database": "Northwind",
+            "authenticationType": "SqlLogin",
+            "user": "student10",
+            "savePassword": true,
+            "encrypt": "Mandatory",
+            "trustServerCertificate": false,
+            "port": 1433
+          }
+        ]
+      }
+    }
+  },
+  "postCreateCommand": "echo 'Codespace ready for SQL course'"
+}
